@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:text="@string/introtxt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:text="@string/quote_txt"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#ccc" android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="0.07"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/quotefrom_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.07"
+        android:text="@string/info_txt"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" android:background="@null"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:contentDescription="main page image" android:background="@drawable/dice_pale"/>
+
+    <LinearLayout
+        android:id="@+id/dicetypewrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" android:entries="@array/chance_method" android:prompt="@string/txt_chance_methode"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="@string/go" android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

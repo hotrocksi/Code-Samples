@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DieRollerMainActivity!</string>
+    <string name="app_name">DieRoller</string>
+    <string name="go">GO</string>
+    <string name="introtxt">Welcome to DieRoller</string>
+    <string name="quote_txt">\"If you must play, decide upon three things at the start; the rules of the game; the stakes; and the quitting time.\"</string>
+    <string name="quotefrom_txt">Chinese Proverb</string>
+    <string name="info_txt">Select your method of chance below and then hit GO</string>
+    <string-array name="no_of_dice">
+        <item >0</item>
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>        
+    </string-array>
+        <string name="txt_number_of_dice">Number of Dice</string>
+        <string-array name="chance_method">
+        <item >RPG Dice</item>
+        <!-- <item >Heads/Tails</item>
+        <item >Playing Cards</item>
+        <item >Tarot Cards</item>-->
+		<item >Poker Dice</item>
+    </string-array>
+        <string name="txt_chance_methode">Select a set</string>
+        <string name="roll">ROLL</string>
+        <string name="reset">RESET</string>
+        <string name="dummytext">dummytext</string>
+	
+</resources>
