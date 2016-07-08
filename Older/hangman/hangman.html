@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<style>
+.alpha-butt{width: 40px;}
+.nq{width: 100px;}
+.tarea{font-weight: bold;}
+.tb1{border: 1px inset black;}
+</style>
+
+<form name="frm">
+<div style="padding-top:50px;"><table width="50%" class="tb1" align="center">
+<tr>
+	<td width="50"></td>
+	<td>
+		<p><img src="./images/hmstart3.gif" height="150" width="150" name="hm"></p>
+	</td>
+
+	<td>
+		<table bgcolor="#C0C0C0" border="1">                   
+		<tr>
+			<td rowspan="2" align="right">
+				Score : <input type="text" name="score" value="0" onfocus="score.blur();" size="2"><br>
+				Fails (10): <input type="text" name="lives" value="0" onfocus="lives.blur();" size="2">  
+			</td>
+		</tr>
+		</table><br>
+
+		
+		<table class="tb1">
+		<tr> 
+			<td align="center">
+				<input type="button" name="start" onclick="new_word(this.form);" value="START" class="nq"><br>   
+				<input type="button" name="res" onclick="restart(this.form);" value="Restart" disabled="true" class="nq">
+			</td></tr>		
+		</table>
+	</td>
+</tr>
+
+</table><br>
+  
+<table bgcolor="#C0C0C0" border="1" align="center">
+<tr>
+	<td align="center">
+		<textarea rows="1" cols="81" name="word" onfocus="word.blur();" class="tarea">
+		    --- Hangman ---  Click 'START' to begin</textarea><br>
+		Fails (10): <input type="text" name="tried" value="" onfocus="tried.blur();" size="25">&nbsp;&nbsp;
+		Correct Tries: <input type="text" name="correct" value="" onfocus="tried.blur();" size="30">
+	</td>
+
+</tr>
+</table><br>
+
+<table bgcolor="#C0C0C0" border="1" align="center">
+<tr>
+	<td><input type="button" id='A' value=" A "  onclick="seek('A');" class="alpha-butt"></td>
+	<td><input type="button" id='B' value=" B "  onclick="seek('B');" class="alpha-butt"></td>
+	<td><input type="button" id='C' value=" C "  onclick="seek('C');" class="alpha-butt"></td>
+	<td><input type="button" id='D' value=" D "  onclick="seek('D');" class="alpha-butt"></td>
+	<td><input type="button" id='E' value=" E "  onclick="seek('E');" class="alpha-butt"></td>
+	<td><input type="button" id='F' value=" F "  onclick="seek('F');" class="alpha-butt"></td>
+	<td><input type="button" id='G' value=" G "  onclick="seek('G');" class="alpha-butt"></td>
+	<td><input type="button" id='H' value=" H "  onclick="seek('H');" class="alpha-butt"></td>
+	<td><input type="button" id='I' value=" I "  onclick="seek('I');" class="alpha-butt"></td>
+	<td><input type="button" id='J' value=" J "  onclick="seek('J');" class="alpha-butt"></td>
+	<td><input type="button" id='K' value=" K "  onclick="seek('K');" class="alpha-butt"></td>
+	<td><input type="button" id='L' value=" L "  onclick="seek('L');" class="alpha-butt"></td>
+	<td><input type="button" id='M' value=" M "  onclick="seek('M');" class="alpha-butt"></td>
+</tr>
+<tr>
+	<td><input type="button" id='N' value=" N "  onclick="seek('N');" class="alpha-butt"></td>
+	<td><input type="button" id='O' value=" O "  onclick="seek('O');" class="alpha-butt"></td>
+	<td><input type="button" id='P' value=" P "  onclick="seek('P');" class="alpha-butt"></td>
+	<td><input type="button" id='Q' value=" Q "  onclick="seek('Q');" class="alpha-butt"></td>
+	<td><input type="button" id='R' value=" R "  onclick="seek('R');" class="alpha-butt"></td>
+	<td><input type="button" id='S' value=" S "  onclick="seek('S');" class="alpha-butt"></td>
+	<td><input type="button" id='T' value=" T "  onclick="seek('T');" class="alpha-butt"></td>
+	<td><input type="button" id='U' value=" U "  onclick="seek('U');" class="alpha-butt"></td>
+	<td><input type="button" id='V' value=" V "  onclick="seek('V');" class="alpha-butt"></td>
+	<td><input type="button" id='W' value=" W "  onclick="seek('W');" class="alpha-butt"></td>
+	<td><input type="button" id='X' value=" X "  onclick="seek('X');" class="alpha-butt"></td>
+	<td><input type="button" id='Y' value=" Y "  onclick="seek('Y');" class="alpha-butt"></td>
+	<td><input type="button" id='Z' value=" Z "  onclick="seek('Z');" class="alpha-butt"></td>
+</tr>
+</table>
+</form>
+</html>
+
+<script src="hangman.js">
+</script>
